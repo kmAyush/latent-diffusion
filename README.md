@@ -26,11 +26,11 @@ Supports: standard model like v1-5-pruned-emaonly.ckpt and fine-tuned models lik
    pip install -r requirements.txt
    python3 main.py
    ```
-### Other tested fine-tuned model -
+### Other tested fine-tuned models -
 Download the `ckpt` file from any fine-tuned SD (up to v1.5).
 
 1. InkPunk Diffusion (by Envvi ai): https://huggingface.co/Envvi/Inkpunk-Diffusion/tree/main
-2. Illustration Diffusion (by Hollie Mengert): https://huggingface.co/ogkalu/Illustration-Diffusion/tree/main
+2. Illustration Diffusion / Hollie Mengert: https://huggingface.co/ogkalu/Illustration-Diffusion/tree/main
    
 ## Model Architecture
 This project uses a latent diffusion model, where:
@@ -39,7 +39,7 @@ Images are encoded into latent space using a variational autoencoder (VAE).
 Diffusion is performed in the latent space, making it computationally efficient.
 Noise is progressively added and denoised in several timesteps.
 
-Note : Will update architecture and technical details
+Note: Will update the architecture and technical details
 
 ## How It Works
 Latent Space Representation:
