@@ -13,15 +13,33 @@ Supports: standard model like v1-5-pruned-emaonly.ckpt and fine-tuned models lik
 <img title="dog" alt="Alt text" src="data/outputs/dog.png" height="128">
 </span>
 
+## Usage
+1. Download weights and tokenizer files - \
+   `vocab.json` and `merges.txt` from [huggingface SD repo/tokenizer](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/tree/main/tokenizer) \
+    `v1-5-pruned-emaonly.ckpt` from [huggingface SD repo](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/tree/main)
+   
+   And save both in the `data` folder.
+   update `main.py` file accordingly for prompt and file path, if needed.
+   
+3. Code to run
+   ```
+   pip install -r requirements.txt
+   python3 main.py
+   ```
+### Other tested fine-tuned model -
+Download the `ckpt` file from any fine-tuned SD (up to v1.5).
+
+1. InkPunk Diffusion (by Envvi ai): https://huggingface.co/Envvi/Inkpunk-Diffusion/tree/main
+2. Illustration Diffusion (by Hollie Mengert): https://huggingface.co/ogkalu/Illustration-Diffusion/tree/main
+   
 ## Model Architecture
 This project uses a latent diffusion model, where:
 
 Images are encoded into latent space using a variational autoencoder (VAE).
 Diffusion is performed in the latent space, making it computationally efficient.
 Noise is progressively added and denoised in several timesteps.
-Important Note: In this simplified version, the CLIP tokenizer is not used, so the model expects simplified input prompts or manual embeddings for text-to-image generation.
 
-
+Note : Will update architecture and technical details
 
 ## How It Works
 Latent Space Representation:
