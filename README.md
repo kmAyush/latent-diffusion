@@ -1,4 +1,4 @@
-## Latent Diffusion Model - Stable Diffusion v1.5 Pipeline Implementation
+## Stable Diffusion v1.5 Pipeline Implementation
 
 With a focus on learning the internals of the Image generation model, I implemented a stable diffusion pipeline. The goal of this project is to explore and implement the main components of the Stable Diffusion v1.5 image generation model, that is, the Variational auto-encoder, CLIP, Unet, DDPM sampler, and diffusion pipeline excluding the CLIP tokenizer for simplicity.
 
